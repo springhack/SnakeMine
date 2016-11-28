@@ -1,0 +1,57 @@
+/**
+        Author: SpringHack - springhack@live.cn
+        Last modified: 2016-11-29 01:33:51
+        Filename: res/main.css
+        Description: Created by SpringHack using vim automatically.
+**/
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+#main {
+    position: static;
+}
+#key {
+    text-align: center;
+}
+#arrow {
+    width: 133px;
+    height: 133px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.item {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    position: relative;
+    background: #1E757B;
+    display: inline-block;
+}
+.item-blank {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+}
+.item:hover {
+    background: #B1F1B2;
+}
+.box {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: 1px #F2FFDF solid;
+    display: inline-block;
+    background: #70A1D7;
+    border-radius: 5px;
+}
+.snake {
+    background: #A1DE93;
+}
+.point {
+    background: #F47C7C;
+}
