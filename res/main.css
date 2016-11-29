@@ -1,6 +1,6 @@
 /**
         Author: SpringHack - springhack@live.cn
-        Last modified: 2016-11-29 15:14:22
+        Last modified: 2016-11-29 15:46:20
         Filename: main.css
         Description: Created by SpringHack using vim automatically.
 **/
@@ -20,10 +20,14 @@ body {
 #main {
     position: static;
     text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
 }
 #key, #can, #msg {
+    display: -webkit-box;
+    display: -webkit-flex;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -37,19 +41,20 @@ body {
     background: #1C4648;
 }
 #key {
-    text-align: center;
-    display: flex;
     justify-content: space-between;
     padding: .1rem;
-    position: absolute;
+    position: fixed;
     bottom: 0rem;
-    width: calc(100% - .26rem);
+    left: 0rem;
+    right: 0rem;
 }
 #arrow {
     width: 1.33rem;
 }
 #switch {
     width: 1.33rem;
+    display: -webkit-box;
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
