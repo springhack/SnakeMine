@@ -1,57 +1,109 @@
 /**
         Author: SpringHack - springhack@live.cn
-        Last modified: 2016-11-29 01:33:51
-        Filename: res/main.css
+        Last modified: 2016-11-29 15:14:22
+        Filename: main.css
         Description: Created by SpringHack using vim automatically.
 **/
 * {
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
+    padding: 0rem;
+    margin: 0rem;
+    border: 0rem;
+    font-size: 0rem;
+    font-family: "苹方", "Microsoft YaHei", "Comic Sans MS", "幼圆", "黑体", sans-serif;
+}
+html {
+    font-size: 100px;
+}
+body {
+    background: #C9EFF9;
 }
 #main {
     position: static;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+#key, #can, #msg {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: .03rem #A3DE83 solid;
+    border-radius: .1rem;
+    font-size: .2rem;
+}
+#msg {
+    margin-top: .05rem;
+    color: #52D681;
+    background: #1C4648;
 }
 #key {
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: .1rem;
+    position: absolute;
+    bottom: 0rem;
+    width: calc(100% - .26rem);
 }
 #arrow {
-    width: 133px;
-    height: 133px;
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
+    width: 1.33rem;
+}
+#switch {
+    width: 1.33rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.btn {
+    font-size: .3rem;
+    background: #36D1C4;
+    color: #07617D;
+    border-radius: .1rem;
+}
+.btn-clk {
+    border: .02rem #8971D0 solid;
 }
 .item {
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
+    width: .4rem;
+    height: .4rem;
+    border-radius: .05rem;
     position: relative;
     background: #1E757B;
     display: inline-block;
 }
 .item-blank {
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
+    width: .4rem;
+    height: .4rem;
+    border-radius: .05rem;
     position: relative;
     display: inline-block;
 }
-.item:hover {
+.item:active {
     background: #B1F1B2;
 }
 .box {
-    position: absolute;
-    width: 18px;
-    height: 18px;
-    border: 1px #F2FFDF solid;
+    position: relative;
+    width: .18rem;
+    height: .18rem;
+    border: .01rem #F2FFDF solid;
     display: inline-block;
     background: #70A1D7;
-    border-radius: 5px;
+    border-radius: .05rem;
 }
 .snake {
-    background: #A1DE93;
+    background: #A1DE93 !important;
+    font-size: 0rem !important;
 }
 .point {
-    background: #F47C7C;
+    background: #F47C7C !important;
+    font-size: 0rem !important;
+}
+.flag {
+    background: #FFE869 !important;
+    font-size: 0rem !important;
+}
+.opacity {
+    font-size: .14rem;
+    background: #FFFFFF;
+    color: #000;
 }

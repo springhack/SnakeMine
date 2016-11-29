@@ -1,21 +1,27 @@
 <!--
         Author: SpringHack - springhack@live.cn
-        Last modified: 2016-11-29 01:33:00
-        Filename: index.html
+        Last modified: 2016-11-29 14:56:17
+        Filename: ../index.html
         Description: Created by SpringHack using vim automatically.
 -->
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 		<title>Demo</title>
         <link rel="stylesheet" href="res/main.css" type="text/css" />
 	</head>
 	<body>
-        <div id='main'>
+        <div id='can'>
+            <div id='main'></div>
         </div>
+        <div id='msg'>扫雷中</div>
         <div id='key'>
+            <div id='switch'>
+                <div class='btn btn-clk' onclick='mode(0, this)'>扫雷</div>
+                <div class='btn' onclick='mode(1, this)'>插旗</div>
+            </div>
             <div id='arrow'>
                 <div class='item-blank'></div>
                 <div class='item' onclick='arrow(2)'></div>
